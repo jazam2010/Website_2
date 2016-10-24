@@ -1,0 +1,88 @@
+@font-face {
+        font-family: Noto-Sans;
+        src: url(fonts/NotoSans-regular.ttf);
+}
+
+@font-face {
+        font-family: Noto-Sans Bold;
+        src: url(fonts/NotoSans-bold.ttf);
+    }
+
+@font-face {
+        font-family: Noto-Sans Italic;
+        src: url(fonts/NotoSans-italic.ttf);
+}
+
+@font-face {
+        font-family: Noto-Sans Bold Italic;
+        src: url(fonts/NotoSans-bolditalic.ttf);
+        }
+
+@font-face {
+        font-family: San Francisco;
+        src: url(fonts/SanFrancisco.otf);
+        }
+
+@font-face {
+        font-family: San Francisco Bold;
+        src: url(fonts/SanFrancisco-bold.otf);
+        }
+
+
+nav a {
+	text-decoration: none;
+	display: inline-flex center;
+	margin: 100px;
+	font-family: Noto-sans, Arial;
+	color: white;
+}
+
+h1 {
+	font-family: Noto-sans, Arial;
+	color: white;
+}
+
+body {
+	background-color: black;
+	background-opacity: 80%;
+
+}
+
+#love {
+	max-height: 800px;
+	max-width: 600px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+}
+
+h2 {
+	color:white;
+	font-family: Noto-sans, Arial;
+}
+
+.rose {
+	font-family: Noto-sans, Arial;
+	color:white;
+}
+
+p {
+	font-family: Noto-sans, Arial;
+	color:white;
+}
+
+#welcome {
+	max-height: 800px;
+	max-width: 600px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	display: block;
+    margin: auto;
+
+}
+
+#first {
+	max-height: 800px;
+	max-width: 600px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+}
