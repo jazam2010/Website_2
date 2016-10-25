@@ -28,7 +28,9 @@
         src: url(fonts/SanFrancisco-bold.otf);
         }
 
-
+* {
+	font-family: Noto-sans, Arial;
+}
 nav a {
 	text-decoration: none;
 	display: inline-flex center;
@@ -49,10 +51,11 @@ body {
 }
 
 #love {
-	max-height: 800px;
-	max-width: 600px;
+	max-height: 600px;
+	max-width: 400px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 15px;
+	float: left;
 }
 
 h2 {
@@ -81,8 +84,21 @@ p {
 }
 
 #first {
-	max-height: 800px;
-	max-width: 600px;
+	max-height: 600px;
+	max-width: 400px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 15px;
+} 
+
+.box {
+  display: flex;                       
+  flex-wrap: wrap;                     
+  justify-content: space-around;
+}
+
+.cell {
+  flex: 0 0 32%;                       
+  margin: 5px;
+  background-color: black;
+
 }
