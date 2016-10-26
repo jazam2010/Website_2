@@ -63,10 +63,6 @@ h2 {
 	font-family: Noto-sans, Arial;
 }
 
-.rose {
-	font-family: Noto-sans, Arial;
-	color:white;
-}
 
 p {
 	font-family: Noto-sans, Arial;
@@ -75,11 +71,14 @@ p {
 
 #welcome {
 	max-height: 800px;
+	height: auto;
+	width: 50%;
 	max-width: 600px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 15px;
 	display: block;
     margin: auto;
+    
 
 }
 
@@ -104,3 +103,6 @@ p {
 		display: inline-block;
 		margin-right: 5px;
     }
+.underline {
+	text-decoration: underline;
+}
