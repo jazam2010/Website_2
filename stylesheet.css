@@ -94,11 +94,13 @@ p {
   display: flex;                       
   flex-wrap: wrap;                     
   justify-content: space-around;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
 .cell {
-  flex: 0 0 32%;                       
-  margin: 5px;
-  background-color: black;
-
-}
+  		max-width: 400px;                       
+		display: inline-block;
+		margin-right: 5px;
+    }
