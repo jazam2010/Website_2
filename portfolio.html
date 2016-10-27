@@ -5,18 +5,31 @@
 
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<!-- Toggle menu based on size-->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav") {
+        x.className += " change";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
 	</head>
 	
-			<body>
-					<!-- Nav Bar -->
-					<div id="navbar">
-					<nav>
-						<a href="index.html"; class="fancy"> Home </a>
-						<a href="about.html"; class="fancy"> About </a>
-						<a href="portfolio.html"; class="fancy"> Portfolio </a>
-						<a href="resume.html"; class="fancy"> Resume </a>
-					</nav>
-					</div>
+		<body>
+
+			<ul class="nav" id="myTopnav">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="portfolio.html">Portfolio</a></li>
+			  <li><a href="resume.html">Resume</a></li>
+			  <li class="icon">
+    			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+			  </li>
+			</ul>
+
 						<h1> Portfolio </h1>
 						<!-- Grid Box -->
 						<div class="box"> 
@@ -88,6 +101,8 @@
 										</a>
 							  </div>
 						</div>
+
 			</body>
+
 
 </html>

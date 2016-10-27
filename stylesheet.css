@@ -31,23 +31,21 @@
 * {
 	font-family: Noto-sans, Arial;
 }
-nav a {
-		text-decoration: none;
-		display: inline-flex center;
-		margin-left: 200px;
-		font-family: Noto-sans, Arial;
-	color: white;
-}
+
 
 h1 {
 	font-family: Noto-sans, Arial;
 	color: white;
 }
 
-body {
-	background-color: black;
-	background-opacity: 80%;
 
+body {
+	background-image: url("images/background.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* family picture */
 #love {
@@ -120,16 +118,63 @@ p {
 	max-width: 800px;
 }
 
-@media (max-width: 900px) {
-
-	body {background-color: #800000; }
-	h1 { color: white; }
+/* nav bar */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(192,192,192,0.8);
 }
 
-@media (max-width: 600px) {
+/* pseudo nav bar */
+ul.nav li {float: left;}
 
-	body {background-color: grey; }
-	h1 { color: black; }
+ul.nav li a {
+    display: inline-block;
+    margin-left: 100px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
 }
+
+ul.nav li a:hover {background-color: #555;}
+
+ul.nav li.icon {display: none;}
+
+
+
+/*media*/
+
+
+
+@media screen and (max-width:773px) {
+  ul.nav li:not(:first-child) {display: none;}
+  ul.nav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:773px) {
+  ul.nav.change {position: relative;}
+  ul.nav.change li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.nav.change li {
+    float: none;
+    display: inline;
+  }
+  ul.nav.change li a {
+    display: block;
+    text-align: left;
+  }
+}
+
 
 

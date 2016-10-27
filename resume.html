@@ -5,18 +5,31 @@
 
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+	<!-- Toggle menu based on size-->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav") {
+        x.className += " change";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
 	</head>
 	
 		<body>
-			<!-- Nav Bar -->
-			<div id="navbar">
-				<nav>
-					<a href="index.html"; class="fancy"> Home </a>
-					<a href="about.html"; class="fancy"> About </a>
-					<a href="portfolio.html"; class="fancy"> Portfolio </a>
-					<a href="resume.html"; class="fancy"> Resume </a>
-				</nav>
-			</div>
+
+			<ul class="nav" id="myTopnav">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="portfolio.html">Portfolio</a></li>
+			  <li><a href="resume.html">Resume</a></li>
+			  <li class="icon">
+    			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+			  </li>
+			</ul>
+
 					<!-- Resume -->
 					<h1> Resume </h1>
 
@@ -59,6 +72,9 @@
 						<!-- Feedback Section -->
 					<h2> <span class="underline"> Feedback <span> </h2>
 							<p class="rose"> As a beginner I have given myself self feedback. Due to my level of enthusiasm for developing a website, I was tending to jump right in to coding without an overall plan. This would not be helpful for time-management because I was spending too much time adding/subtracting ideas from my website. I noticed this and implemented a plan to make a sketch of each and every website I would make from then on. </p>
+
+
 	</body>
+
 
 </html>
